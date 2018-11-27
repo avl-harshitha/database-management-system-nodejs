@@ -1,0 +1,25 @@
+{
+  "name": "sqlproj",
+  "version": "1.0.0",
+  "description": "pharmacy management system ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dbsqlproj.js",
+    "postinstall": "node createtables.js",
+    "preuninstall1": "node droptables.js",
+    "preuninstall2" : "node uninstallpkg.js ",
+    "uninstall" : "npm run preuninstall1 && npm run preuninstall2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "multer": "^1.4.1",
+    "nodemailer": "^4.7.0",
+    "path": "^0.12.7",
+    "sqlite3": "^4.0.4"
+  }
+}
