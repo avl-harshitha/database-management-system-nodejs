@@ -6,7 +6,7 @@ var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'ontracksols@gmail.com',
-    pass: 'lexionTrack'
+    pass: '*******'
   }
 });
 app.use(bodyParser.urlencoded({ extended: false }));
